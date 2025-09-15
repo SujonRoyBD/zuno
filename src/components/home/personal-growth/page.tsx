@@ -9,13 +9,11 @@ const PersonalGrowth = () => {
 
   return (
     <div ref={ref} className="relative">
-      {/* Side images container */}
       <motion.div
         className="flex gap-5 py-3 transition-all"
         animate={isInView ? { opacity: 0.2 } : { opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        {/* Left column */}
         <div>
           <Image
             className="w-full h-[250px] object-cover rounded-3xl py-3"
@@ -39,10 +37,7 @@ const PersonalGrowth = () => {
             height={200}
           />
         </div>
-
-        {/* Middle column */}
         <div className="relative">
-          {/* Top image (hide when fullscreen) */}
           {!isInView && (
             <Image
               className="w-full h-[150px] object-cover rounded-3xl py-3"
@@ -52,13 +47,11 @@ const PersonalGrowth = () => {
               height={200}
             />
           )}
-
-          {/* Animated middle image */}
           <motion.div
             initial={{ width: "100%", height: "450px" }}
             animate={
               isInView
-                ? { width: "100vw", height: "100vh" } // Fullscreen
+                ? { width: "100vw", height: "100vh" } 
                 : { width: "100%", height: "450px" }
             }
             transition={{ duration: 1 }}
@@ -73,8 +66,6 @@ const PersonalGrowth = () => {
               width={1920}
               height={1080}
             />
-
-            {/* Overlay Text */}
             {isInView && (
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
@@ -93,8 +84,6 @@ const PersonalGrowth = () => {
               </motion.div>
             )}
           </motion.div>
-
-          {/* Bottom image (hide when fullscreen) */}
           {!isInView && (
             <Image
               className="w-full h-[150px] object-cover rounded-3xl py-3"
@@ -105,8 +94,6 @@ const PersonalGrowth = () => {
             />
           )}
         </div>
-
-        {/* Right column */}
         <div>
           <Image
             className="w-full h-[250px] object-cover rounded-3xl py-3"

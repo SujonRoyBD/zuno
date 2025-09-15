@@ -9,9 +9,11 @@ export default function Home() {
 <div>
   <HeroSection/>
   <Gallery/>
-  <According/>
   <PersonalGrowth/>
   <Automate/>
+  <According/>
+  
+  
 
 </div>
   );
