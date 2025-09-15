@@ -19,11 +19,11 @@ const Gallery = () => {
   }, [])
 
   const images = [
-    "/assets/automate/images (2).jpg",
-    "/assets/automate/images (2).jpg",
-    "/assets/automate/images (2).jpg",
-    "/assets/automate/images (2).jpg",
-    "/assets/automate/images (2).jpg",
+    "/assets/gallery/gallery1.png",
+    "/assets/gallery/gallery2 (1) (1).png",
+    "/assets/gallery/gallery3.png",
+    "/assets/gallery/gallery4.png",
+    "/assets/gallery/gallery5.png",
   ]
 
   return (
