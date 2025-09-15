@@ -31,7 +31,7 @@ const Automate = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16 py-5 ">
         <div className="w-[355px] md:w-[350px] lg:w-[550px]">
           <Image className="h-[475px] rounded-3xl"
-            src="/assets/automate/images (3).jpg"
+            src="/assets/automate/automate1.png"
             width={600}
             height={800}
             alt="redy"
@@ -48,7 +48,7 @@ const Automate = () => {
             </p>
           </div>
 
-          <div>
+          <div className="py-5">
             <Swiper
               breakpoints={breakpoints}
               autoplay={{
@@ -61,17 +61,17 @@ const Automate = () => {
             >
               <SwiperSlide >
                 <Image
-                  className="w-full h-[250px] object-cover rounded-3xl"
-                  src="/assets/automate/images (1).jpg"
+                  className="w-full h-[230px] object-cover rounded-3xl"
+                  src="/assets/automate/automate2.png"
                   alt="q"
                   width={700}
                   height={200}
                 />
               </SwiperSlide>
-              <SwiperSlide>
+              <SwiperSlide >
                 <Image
-                  className="w-full h-[250px] object-cover rounded-3xl"
-                  src="/assets/automate/images (2).jpg"
+                  className="w-full h-[230px] object-cover rounded-3xl"
+                  src="/assets/automate/automate3.png"
                   alt="qwww"
                   width={700}
                   height={200}
@@ -79,8 +79,8 @@ const Automate = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <Image
-                  className="w-[400px]  h-[250px] object-cover rounded-3xl"
-                  src="/assets/automate/images (2).jpg"
+                  className="w-[400px]  h-[230px] object-cover rounded-3xl"
+                  src="/assets/automate/automate4.png"
                   alt="qeww"
                   width={300}
                   height={200}
@@ -88,8 +88,8 @@ const Automate = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <Image
-                  className="w-full h-[250px] object-cover rounded-3xl"
-                  src="/assets/automate/images (2).jpg"
+                  className="w-full h-[230px] object-cover rounded-3xl"
+                  src="/assets/automate/automate5.png"
                   alt="qwe"
                   width={300}
                   height={200}
