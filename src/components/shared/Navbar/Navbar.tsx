@@ -15,19 +15,19 @@ const Navbar: React.FC = () => {
       <div className="py-4 w-full flex items-center justify-center mx-auto">
         <div className="flex justify-between items-center w-full max-w-[1000px] bg-gray-100 z-30 py-3 px-4 rounded-2xl">
           <div>
-            <Image
+            <Link href="/"><Image
               src="/assets/67ea1567f801b7bf3d63fad7_zuno-logo-b.svg"
               width={80}
               height={80}
               alt="logo"
               className="mt-1"
-            />
+            /></Link>
           </div>
           <div className="hidden md:flex gap-6 relative">
-            <p className="cursor-pointer">Home</p>
+            <Link href="/"><p className="cursor-pointer">Home</p></Link>
             <div className="relative group">
               <p className="cursor-pointer flex gap-2">Pages <MdKeyboardArrowDown className="mt-1"/></p>
-              <div className="absolute left-0 top-8 bg-white shadow-lg rounded-xl p-4 grid grid-cols-4 gap-3 w-[400px] hidden group-hover:grid ">
+              <div className="absolute left-0 top-full mt-2 bg-white shadow-lg rounded-xl p-4 grid grid-cols-4 gap-3 w-[400px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                 <Link href="/" className="hover:text-green-500">Home 1</Link>
                 <Link href="/" className="hover:text-green-500">About 1</Link>
                 <Link href="/" className="hover:text-green-500">Home 2</Link>
@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
             </div>
             <div className="relative group">
                <p className="cursor-pointer flex gap-2">Tamplate <MdKeyboardArrowDown className="mt-1"/></p>
-              <div className="absolute left-0 top-8 bg-white shadow-lg rounded-xl p-4  gap-3 w-[250px] hidden group-hover:grid">
+              <div className="absolute left-0 top-full mt-2 bg-white shadow-lg rounded-xl p-4  opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                 <Link href="/" className="hover:text-green-500">Style Guide</Link>
                 <Link href="/" className="hover:text-green-500">License </Link>
                 <Link href="/" className="hover:text-green-500">ChangeLog</Link>
