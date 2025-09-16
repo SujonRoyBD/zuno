@@ -3,7 +3,6 @@ import { motion, useScroll, useTransform, MotionValue } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
 
-// ---- Props Type ----
 type MotionImageProps = {
   src: string;
   i: number;
@@ -12,8 +11,6 @@ type MotionImageProps = {
   gap: number;
   scrollYProgress: MotionValue<number>;
 };
-
-// ---- Child Component ----
 function MotionImage({
   src,
   i,
@@ -23,12 +20,9 @@ function MotionImage({
   gap,
 }: MotionImageProps) {
   const angle = (i / total) * 2 * Math.PI;
-
-  // Row layout (top এ থাকবে)
   const rowX = i * gap - ((total - 1) * gap) / 2;
   const rowY = -250;
 
-  // Circle layout (center এ)
   const circleX = radius * Math.cos(angle);
   const circleY = radius * Math.sin(angle);
 
@@ -51,7 +45,6 @@ function MotionImage({
   );
 }
 
-// ---- Main Component ----
 export default function RequestDem() {
   const ref = useRef<HTMLDivElement | null>(null);
   const { scrollYProgress } = useScroll({
@@ -59,7 +52,6 @@ export default function RequestDem() {
     offset: ["0 1", "1 1"], 
   });
 
-  // ১২টা আলাদা ইমেজ
   const images = [
     "/assets/gallery/gallery1.png",
     "/assets/gallery/gallery2 (1) (1).png",
