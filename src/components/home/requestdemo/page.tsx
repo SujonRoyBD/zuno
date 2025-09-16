@@ -1,14 +1,34 @@
 "use client";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, MotionValue } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
 
-function MotionImage({ src, i, scrollYProgress, total, radius, gap }: any) {
+// ---- Props Type ----
+type MotionImageProps = {
+  src: string;
+  i: number;
+  total: number;
+  radius: number;
+  gap: number;
+  scrollYProgress: MotionValue<number>;
+};
+
+// ---- Child Component ----
+function MotionImage({
+  src,
+  i,
+  scrollYProgress,
+  total,
+  radius,
+  gap,
+}: MotionImageProps) {
   const angle = (i / total) * 2 * Math.PI;
   const rowX = i * gap - ((total - 1) * gap) / 2;
   const rowY = 0;
   const circleX = radius * Math.cos(angle);
   const circleY = radius * Math.sin(angle);
+
+  // ✅ Safe use of hooks
   const x = useTransform(scrollYProgress, [0, 1], [rowX, circleX]);
   const y = useTransform(scrollYProgress, [0, 1], [rowY, circleY]);
 
@@ -28,8 +48,9 @@ function MotionImage({ src, i, scrollYProgress, total, radius, gap }: any) {
   );
 }
 
+// ---- Main Component ----
 export default function RequestDem() {
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement | null>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["0 1", "1 1"],
