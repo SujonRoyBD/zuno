@@ -56,7 +56,7 @@ const Navbar: React.FC = () => {
           </div>
           <div className="hidden md:block">
             <Link
-              href="/requestdemo"
+              href="/request-demo"
               onClick={closeMenu}
               className="px-3 py-2 bg-[#d2f0a3] rounded-xl w-fit inline-block"
             >
@@ -66,7 +66,7 @@ const Navbar: React.FC = () => {
           <div className="md:hidden">
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className="p-2 bg-[#d2f0a3] rounded-xl"
+              className="p-2 rounded-xl"
             >
               {menuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>

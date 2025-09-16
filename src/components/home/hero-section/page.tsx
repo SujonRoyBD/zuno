@@ -9,7 +9,7 @@ const HeroSection = () => {
           Personal Growth
         </button>
       </div>
-      <div className="text-center items-center mx-auto text-8xl font-bold ">Feel more <br /> human every day</div>
+      <div className="text-center items-center mx-auto text-3xl md:text-8xl font-bold ">Feel more <br /> human every day</div>
       <div className="flex justify-center items-center py-6 mx-auto ">
         <button className="px-6 py-3 bg-[#d2f0a3] rounded-full ">
           Request Demo
