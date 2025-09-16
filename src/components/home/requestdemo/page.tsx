@@ -36,7 +36,7 @@ export default function RequestDem() {
               <Image
                 src={src}
                 alt={`img-${i}`}
-                width={80}
+                width={81}
                 height={80}
                 className="rounded-lg object-cover"
               />
