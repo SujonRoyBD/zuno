@@ -12,7 +12,6 @@ export function According() {
 
   return (
     <div className="container py-10">
-      {/* Top Section */}
       <div>
         <div className="py-5">
           <button className="flex justify-center items-center mx-auto py-2 px-6 rounded-full bg-[#1313130f]">
@@ -22,7 +21,6 @@ export function According() {
         <p className="font-bold text-3xl text-center">We’re here to help</p>
       </div>
 
-      {/* Accordion Section */}
       <Accordion
         type="single"
         collapsible
@@ -30,7 +28,6 @@ export function According() {
         onValueChange={(val) => setOpenItem(val)}
         className="w-full mt-8"
       >
-        {/* Item 1 */}
         <AccordionItem value="item-1" className="border-b-0">
           <AccordionTrigger className="flex justify-between items-center [&>svg]:hidden no-underline hover:no-underline">
             <span>What is Zuno?</span>
@@ -46,8 +43,6 @@ export function According() {
             </p>
           </AccordionContent>
         </AccordionItem>
-
-        {/* Item 2 */}
         <AccordionItem value="item-2" className="border-b-0">
           <AccordionTrigger className="flex justify-between items-center [&>svg]:hidden no-underline hover:no-underline">
             <span>Is Zuno a replacement for therapy?</span>
@@ -63,8 +58,6 @@ export function According() {
             </p>
           </AccordionContent>
         </AccordionItem>
-
-        {/* Item 3 */}
         <AccordionItem value="item-3" className="border-b-0">
           <AccordionTrigger className="flex justify-between items-center [&>svg]:hidden no-underline hover:no-underline">
             <span>Who is Zuno for?</span>
@@ -80,8 +73,6 @@ export function According() {
             </p>
           </AccordionContent>
         </AccordionItem>
-
-        {/* Item 4 */}
         <AccordionItem value="item-4" className="border-b-0">
           <AccordionTrigger className="flex justify-between items-center [&>svg]:hidden no-underline hover:no-underline">
             <span>How does the AI actually help?</span>
